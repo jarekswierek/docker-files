@@ -1,0 +1,15 @@
+version: '2'
+services:
+    db:
+        build: ./db
+        ports:
+            - 5432:5432
+        expose:
+            - 5432
+        network_mode: bridge
+        environment:
+            - POSTGRES_USER=postgres
+            - DB_USER=myuser
+            - DB_PASS=mypassword
+            - DB_1_NAME=mydb1
+            - DB_2_NAME=mydb2

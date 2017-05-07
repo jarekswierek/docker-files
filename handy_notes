@@ -1,0 +1,2 @@
+# zmiana właściciela plików -- użyć gdy READ-ONLY
+sudo chown -R $USER: .
